@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  grid-template-areas:
+    "header header header"
+    "logo   nav    nav"
+    "main   main   aside"
+    "footer footer footer";
+  gap: 12px;
+}
+
+header { grid-area: header; }
+#logo { grid-area: logo; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+#visit { grid-area: aside; }
+footer { grid-area: footer; }
+
+header, nav, main, footer, aside, section {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 16px;
+}
+
+h1, h2, h3 { margin-top: 0; }
+
+#logo {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #dcdcdc;
+  margin: 12px auto;
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+img {
+  border: 1px solid #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table, th, td {
+  border: 1px solid #cfcfcf;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
